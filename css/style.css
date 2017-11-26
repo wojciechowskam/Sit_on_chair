@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+}
+
+/*zerujemy odstępy od okna przeglądarki*/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Raleway, sans-serif;
+}
+
+/*zerujemy padding i margin nagłówków aby header nie "odstawał" */
+
+h1, h2, h3, h4, h5, h6, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*dodajewy klasę definiującą szerokość strony */
+
+.container {
+    width: 1200px;
+    /*wymagane do wyśrodkowania */
+    margin: 0 auto;
+    /* aby się wyśrodkowała */
+}
+
+/* dodajemy czyszczenie float */
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/*1. menu */
+
+header {
+    background-color: black;
+    height: 50px;
+}
+
+header .logo, header nav {
+    float: left;
+}
+
+header .logo {
+    width: 50%;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+header .logo:hover, .menu a li:hover {
+        color: #19e9bc;
+}
+header nav {
+    width: 50%;
+    line-height: 50px;
+}
+
+.menu ul {
+    float: right;
+}
+
+.menu a li {
+    color: white;
+    width: 100px;
+    float: left;
+    list-style-type: none;
+    text-transform: uppercase;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    font-weight: 700;
+}
+
+
+.menu__detail {
+    display: none;
+}
+
+header span, .first_section span {
+    color: #19e9bc;
+}
+
+/*sekcja z czarnym fotelem*/
+
+.first_section {
+    width: 100%;
+    height: 550px;
+    background: rgba(255, 255, 255, 1);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(213, 213, 213, 1) 96%, rgba(212, 212, 212, 1) 99%, rgba(246, 246, 246, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(96%, rgba(213, 213, 213, 1)), color-stop(99%, rgba(212, 212, 212, 1)), color-stop(100%, rgba(246, 246, 246, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(213, 213, 213, 1) 96%, rgba(212, 212, 212, 1) 99%, rgba(246, 246, 246, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(213, 213, 213, 1) 96%, rgba(212, 212, 212, 1) 99%, rgba(246, 246, 246, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(213, 213, 213, 1) 96%, rgba(212, 212, 212, 1) 99%, rgba(246, 246, 246, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(213, 213, 213, 1) 96%, rgba(212, 212, 212, 1) 99%, rgba(246, 246, 246, 1) 100%);
+}
+
+.first_section .chair, .first_section .info {
+    float: left;
+    margin-top: 80px;
+}
+
+.first_section .chair {
+    width: 35%;
+}
+
+.first_section .info {
+    width: 55%;
+}
+
+.first_section a {
+    font-size: 100px;
+    float: left;
+    color: #19e9bc;
+    line-height: 500px;
+    text-decoration: none;
+}
+
+img[alt="czarny fotel"] {
+    width: 560px;
+    float: left;
+}
+
+.first_section .info_1 {
+    margin-top: 60px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.first_section .info_2 {
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
+    padding: 0px 60px;
+}
+
+.first_section button {
+    background-color: #19e9bc;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 15px 40px;
+    margin: 25px 200px;
+    cursor: pointer;
+
+}
+.first_section button:hover {
+    background-color: #22c4a1;
+    font-weight: 700;
+}
+/*sekcja ze zdjęciami */
+
+section .box_1, section .box_2, section .box_3 {
+    float: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.second_section {
+    width: 100%;
+    height: 380px;
+    background-color: white;
+}
+
+.second_section .box_1 {
+    width: 380px;
+    height: 250px;
+    background-image: url("../images/box1_img.jpg");
+    background-size: cover;
+}
+
+.second_section .box_2 {
+    width: 380px;
+    height: 250px;
+    background-image: url("../images/box2_img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second_section .box_3 {
+    width: 380px;
+    height: 280px;
+    border: 2px solid #d8e0de;
+    text-align: left;
+    padding: 15px;
+}
+
+.second_section .box_2 {
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.box_text {
+    width: 380px;
+    height: 70px;
+    background: rgba(226, 226, 226, .7);
+    margin-top: 160px;
+}
+
+.foto_text_underline {
+    text-transform: uppercase;
+}
+
+.box_text p {
+    margin: 20px;
+    border-bottom: 10px solid #19e9bc;
+    width: 145px;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+h3.box_text  {
+    background: 0;
+    margin: 0;
+    border-bottom: 10px solid #19e9bc;
+    width: 200px;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    height: 45px;
+}
+
+.box_3>p {
+    line-height: 25px;
+    font-size: 15px;
+    color: #959e9c;
+}
+
+/*cennik */
+
+.price_section {
+    height: 750px;
+    width: 100%;
+    background-color: #f1eeee;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.price_section .price {
+    width: 300px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.price p {
+    width: 380px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 10px solid #19e9bc;
+    padding-bottom: 10px;
+}
+.price_box_1 {
+    float: left;
+    background-color: #fafafa;
+    width: 32%;
+    height: 550px;
+    border: 2px solid #e4e4e4;
+    /z-index: 1;
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 160px;
+    /*połowa szerokości naglowka minus polowa szer kolka*/
+    top: -30px;
+    /*połowa kółka*/
+    background-color: white;
+    border: 1px solid #e4e4e4;
+    z-index: 2;
+}
+
+.small_circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #e4e4e4;
+    z-index: 3;
+    left: 14px;
+    top: 14px;
+}
+
+.price_box_2 {
+    float: left;
+    background-color: #fafafa;
+    width: 32%;
+    height: 550px;
+    border: 2px solid #e4e4e4;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.price_box_3 {
+    float: left;
+    background-color: #fafafa;
+    width: 32%;
+    height: 550px;
+    border: 2px solid #e4e4e4;
+    margin-top: 50px;
+    position: relative;
+    text-align: center;
+}
+
+.price_section h2 {
+    color: #19e9bc;
+    margin-top: 40px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.circle_price {
+    width: 120px;
+    height: 120px;
+    line-height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 130px;
+    /*połowa szerokości naglowka minus polowa szer kolka*/
+    top: 60px;
+    /*połowa kółka*/
+    border: 2px solid #b6b6b6;
+    z-index: 2;
+    color: #b6b6b6;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.circle_price h3 {
+    line-height: 30px;
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+
+.circle_price h3 sup {
+    font-size: 18px;
+}
+
+.circle_price p {
+    line-height: 30px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.price_section ul {
+    margin-top: 180px;
+    list-style: none;
+    text-align: center;
+    width: auto;
+    line-height: 50px;
+}
+
+.price_section li {
+    color: #a0a0a0;
+    font-size: 25px;
+}
+
+.price_section li:nth-child(odd) {
+    background-color: #e4e4e4;
+}
+
+.price_section li:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+.price_section button {
+    position: absolute;
+    top: 500px;
+    left: 130px;
+    padding: 10px 30px;
+    background-color: #19e9bc;
+    color: #ffffff;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.price_section button:hover {
+    background-color: #ffffff;
+    color: #22c4a1;
+}
+.price_box_1:hover, .price_box_2:hover, .price_box_3:hover  {
+    background-color: #22c4a1;
+}
+/*formularz kontaktowy */
+
+.section_contact {
+    width: 100%;
+    float: left;
+}
+
+.section_contact .contact {
+    width: 300px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.contact p {
+    width: 380px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 10px solid #19e9bc;
+    padding-bottom: 10px;
+}
+
+input, textarea {
+    width: 760px;
+    border: 1px solid #19e9bc;
+    display: block;
+    margin: 20px 0;
+    font-size: 30px;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    overflow: hidden;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #b6b6b6;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form_submit {
+    width: 318px;
+    margin-left: 100px;
+}
+
+.form_user, .form_submit, .footer_copy, .footer_social, .footer_logo {
+    float: left;
+}
+
+.form_submit img {
+    width: 280px;
+}
+
+.form_submit p {
+    font-size: 16px;
+    display: inline-block;
+    width: 270px;
+    color: #b6b6b6;
+    padding: 5px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #19e9bc;
+    border-radius: 3px;
+}
+
+input[type=checkbox]:checked+label {
+    background: url('../images/form_ok.jpg') no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    padding: 0;
+}
+
+.form_submit button {
+
+    background-color: #19e9bc;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 130px;
+    cursor: pointer;
+}
+.form_submit button:hover {
+    background-color: #22c4a1;
+    font-weight: 700;
+}
+
+/*stopka*/
+
+.footer_copy, .footer_social, .footer_logo {
+    float: left;
+}
+
+.footer_copy {
+    margin: 50px 0;
+    width: 860px;
+    color: #b6b6b6;
+}
+
+.footer_social {
+    margin: 50px 0px;
+    width: 170px;
+    position: relative;
+}
+
+.footer_logo {
+    margin: 50px 0;
+    width: 170px;
+    text-transform: uppercase;
+    text-align: right;
+    color: #b6b6b6;
+}
+
+.footer_logo span {
+    font-weight: 700;
+}
