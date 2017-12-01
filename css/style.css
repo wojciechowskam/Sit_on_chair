@@ -67,7 +67,7 @@ header nav {
 
 .menu a li {
     color: white;
-    width: 100px;
+    width: 120px;
     float: left;
     list-style-type: none;
     text-transform: uppercase;
@@ -76,14 +76,37 @@ header nav {
     display: block;
     font-weight: 700;
 }
-
-
-.menu__detail {
-    display: none;
-}
-
 header span, .first_section span {
     color: #19e9bc;
+}
+/*rozwijane menu*/
+.menu_detail {
+  display: none;
+  width: 120px;
+  position: absolute;
+  top: 60px;
+  list-style-type: none;
+}
+.menu_detail a li{
+  background: #000000;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 7px;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+.menu_detail_arrow {
+  display: none;
+  position: absolute;
+  top: -10px;
+  left: 70px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #000000;
 }
 
 /*sekcja z czarnym fotelem*/
@@ -124,6 +147,13 @@ header span, .first_section span {
 img[alt="czarny fotel"] {
     width: 560px;
     float: left;
+}
+img[alt="czerwony fotel"] {
+    width: 500px;
+    float: left;
+}
+.invisible {
+  display: none;
 }
 
 .first_section .info_1 {
@@ -201,19 +231,33 @@ section .box_1, section .box_2, section .box_3 {
     margin-left: 2%;
     margin-right: 2%;
 }
-
 .box_text {
+
     width: 380px;
     height: 70px;
     background: rgba(226, 226, 226, .7);
     margin-top: 160px;
 }
 
+.box_text_1, .box_text_2 {
+
+    width: 380px;
+    height: 70px;
+    background: rgba(226, 226, 226, .7);
+    margin-top: 160px;
+}
+
+.hidden {
+    display: none;
+}
+.color {
+    background-color: red;
+}
 .foto_text_underline {
     text-transform: uppercase;
 }
 
-.box_text p {
+.box_text_1 p, .box_text_2 p {
     margin: 20px;
     border-bottom: 10px solid #19e9bc;
     width: 145px;
