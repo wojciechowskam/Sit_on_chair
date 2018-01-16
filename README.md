@@ -2,4 +2,4 @@
 My first workshop!
 Technologies used: HTML, CSS, JacaScript.
 
-You can see it here:
+You can see it here: https://wojciechowskam.github.io/Sit_on_chair/
