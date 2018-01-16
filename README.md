@@ -1,2 +1,5 @@
 # Sit_on_chair
-projekt na zaliczenie
+My first workshop!
+Technologies used: HTML, CSS, JacaScript.
+
+You can see it here:

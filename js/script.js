@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log(arrow);
 
     tooltip.querySelector("li").addEventListener("mouseover", function(event) {
-        event.preventDefault();
+        //event.preventDefault();
         arrow.style.display = "block";
         tooltipMenu.style.display = "block";
     });

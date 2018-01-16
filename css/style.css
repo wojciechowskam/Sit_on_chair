@@ -452,6 +452,10 @@ h3.box_text  {
 .price_box_1:hover, .price_box_2:hover, .price_box_3:hover  {
     background-color: #22c4a1;
 }
+
+.price_box_1:hover .circle, .price_box_2:hover .circle, .price_box_3:hover .circle {
+    background-color: #22c4a1;
+}
 /*formularz kontaktowy */
 
 .section_contact {
